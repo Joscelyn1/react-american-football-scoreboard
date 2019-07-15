@@ -29,7 +29,9 @@ useEffect(() => {
   if (isActive) {
     interval = setInterval(() => {
       setSeconds(seconds => seconds + 1);
-      if (seconds > 60) {
+      
+  
+      if (seconds >= 59) {
         setSeconds(0);
         setMinutes(minutes => minutes + 1);
 
